@@ -12,7 +12,6 @@ const u16* (*get_bg_map(struct InterfaceDefinition *def, u8 bg_id))(void){
         return def->get_bg_1_map;
     }
     if(bg_id == 2){
-        //dprintf("returning map 0x%x, \n", def->get_bg_2_map);
         return def->get_bg_2_map;
     }
     if(bg_id == 3){
@@ -29,7 +28,6 @@ const u8 * (*get_bg_tilesets(struct InterfaceDefinition *def, u8 bg_id))(void){
         return def->get_bg_1_tilesets;
     }
     if(bg_id == 2){
-        //dprintf("returning tiles 0x%x, \n", def->get_bg_2_tilesets);
         return def->get_bg_2_tilesets;
     }
     if(bg_id == 3){
@@ -46,7 +44,6 @@ const u8*  (*get_bg_pal(struct InterfaceDefinition *def, u8 bg_id))(void){
         return def->get_bg_1_pal;
     }
     if(bg_id == 2){
-        //dprintf("returning pal 0x%x, \n", def->get_bg_2_pal);
         return def->get_bg_2_pal;
     }
     if(bg_id == 3){

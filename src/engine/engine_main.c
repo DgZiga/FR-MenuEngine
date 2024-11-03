@@ -25,7 +25,6 @@ void gui_handler(){
 				bgid_mod_y_offset(0, 0, 0);
 				bgid_mod_x_offset(1, 0, 0);
 				bgid_mod_y_offset(1, 0, 0);
-				//gpu_tile_bg_drop_all_sets(0);
 				bg_vram_setup(0, def.gui_bg_config, 4);
 				//Clear VRAM
 				u32 set = 0;
